@@ -2,7 +2,6 @@
 
 int main(void)
 {
-	_putchar('A');
-	_putchar('\n');
+	_putchar('A \n');
 	return (0);
 }
