@@ -1,3 +1,3 @@
-0x01 Variables if else while
+0x01. C - Variables, if, else, while
 
-This is the readme file for the if, else, while and variables project.
+This is the README.md file for the variables, if, else and while project.
