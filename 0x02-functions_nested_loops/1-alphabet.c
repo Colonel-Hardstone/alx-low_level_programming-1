@@ -8,11 +8,13 @@
 
 void print_alphabet(void)
 {
-	int i = 65;
-	
-	while (i <= 90)
+	int i = 99;
+
+	while (i <= 122)
 	{
 		_putchar(i);
 		++i;
 	}
+	i = 10;
+	putchar(i);
 }
