@@ -11,7 +11,7 @@ int main(void)
 	long i = 0;
 	long j = 1;
 	long n = 2;
-	long sum = n;
+	int sum = n;
 
 	while (n + j < 4000000)
 	{
