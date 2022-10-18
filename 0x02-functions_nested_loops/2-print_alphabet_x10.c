@@ -8,11 +8,15 @@
 
 void print_alphabet_x10(void)
 {
-	int i = 0;
+	int i, nl;
+
+	i = 0;
 
 	while (i < 10)
 	{
-	int i = 97;
+	int i;
+
+	i = 97;
 
 	while (i <= 122)
 	{
@@ -21,8 +25,7 @@ void print_alphabet_x10(void)
 
 	}
 
-	int nl = 10;
-
+	nl = 10;
 	_putchar(nl);
 	i++;
 
