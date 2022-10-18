@@ -25,6 +25,6 @@ int main(void)
 		++i;
 	}
 
-	printf("&1d\n", sum);
+	printf("%1d\n", sum);
 	return (0);
 }
