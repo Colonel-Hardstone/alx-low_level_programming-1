@@ -8,12 +8,11 @@
  * Return: sum of the two integers.
  */
 
-
 int add(int i, int j)
 {
 	int sum;
-	sum = i + j;
 
+	sum = i + j;
 	return (sum);
 
 }
