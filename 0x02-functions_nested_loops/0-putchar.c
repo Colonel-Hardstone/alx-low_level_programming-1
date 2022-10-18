@@ -20,7 +20,7 @@ int main(void)
 	print [6] = 97;
 	print [7] = 114;
 	print [8] = 10;
-	
+
 	while (i <= 8)
 	{
 		putchar(print[i]);
