@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-   *abs - returns the absolute value of a number
+   *_abs - returns the absolute value of a number
    *@n: character to be checked
    *
    *Return: This function returns a postive int number
    */
 
-int abs(int n)
+int _abs(int n)
 {
 	if (n >= 0)
 	{
