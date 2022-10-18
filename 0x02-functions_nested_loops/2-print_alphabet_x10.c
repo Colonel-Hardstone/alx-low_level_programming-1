@@ -14,20 +14,20 @@ void print_alphabet_x10(void)
 
 	while (i < 10)
 	{
-	int i;
+	int j;
 
-	i = 97;
+	j = 97;
 
-	while (i <= 122)
+	while (j <= 122)
 	{
-		_putchar(i);
-		++i;
+		_putchar(j);
+		++j;
 
 	}
 
 	nl = 10;
 	_putchar(nl);
-	i++;
+	++i;
 
 	}
 
