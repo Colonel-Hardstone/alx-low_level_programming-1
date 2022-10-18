@@ -8,6 +8,7 @@
 
 int main(void)
 {
+	int i = 0;
 	char print[9];
 
 	print [0] = 95;
@@ -19,8 +20,7 @@ int main(void)
 	print [6] = 97;
 	print [7] = 114;
 	print [8] = 10;
-
-	int i = 0;
+	
 	while (i <= 8)
 	{
 		putchar(print[i]);
