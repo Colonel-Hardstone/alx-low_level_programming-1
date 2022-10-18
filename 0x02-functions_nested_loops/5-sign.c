@@ -7,7 +7,7 @@
    *Return: This function returns -1, 1 or 0 depending on input
    */
 
-int print_sign(int n);
+int print_sign(int n)
 {
 	if (n > 0)
 	{
