@@ -1,9 +1,16 @@
+#include "main.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-Function that randomly generates passwords of length n
+/**
+  *randomPasswordGeneration - Function that randomly generates
+  *passwords of length n.
+  *@N: password length
+  *
+  *Return: Nothing.
+ */
 
 void randomPasswordGeneration(int N)
 {
@@ -13,7 +20,7 @@ void randomPasswordGeneration(int N)
 	srand((unsigned int)(time(NULL)));
 
 	char numbers[] = "0123456789";
-	char letter [] = "abcdefghijklmnopqrstuvwxyz"
+	char letter[] = "abcdefghijklmnopqrstuvwxyz"
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbols[] = "!@#$^&*?";
 	char password[N];
@@ -26,7 +33,7 @@ void randomPasswordGeneration(int N)
 		{
 			password[i] = symbols[rand() % 8];
 			randomizer = rand() % 4;
-			printf("%c", password [i]);
+			printf("%c", password[i]);
 		}
 		else if (randomizer == 2)
 		{
@@ -40,7 +47,8 @@ void randomPasswordGeneration(int N)
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
-		else {
+		else
+		{
 			password[i] = letter[rand() % 26];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
