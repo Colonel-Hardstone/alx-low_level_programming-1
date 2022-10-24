@@ -16,9 +16,6 @@ void randomPasswordGeneration(int N)
 {
 	int i = 0;
 	int randomizer = 0;
-
-	srand((unsigned int)(time(NULL)));
-
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnopqrstuvwxyz"
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -26,6 +23,8 @@ void randomPasswordGeneration(int N)
 	char password[N];
 
 	randomizer  = rand() % 4;
+	srand((unsigned int)(time(NULL)));
+
 
 	for (i = 0; i < N; i++)
 	{
