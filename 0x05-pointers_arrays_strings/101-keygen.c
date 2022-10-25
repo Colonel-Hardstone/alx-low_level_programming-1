@@ -36,7 +36,7 @@ void randomPasswordGeneration(int N)
 		}
 		else if (randomizer == 2)
 		{
-			password[i] = symbols[rand() % 8];
+			password[i] = numbers[rand() % 8];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
