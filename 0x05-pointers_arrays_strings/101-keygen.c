@@ -12,7 +12,7 @@
   *Return: Nothing.
  */
 
-void randomPasswordGeneration(int N)
+void randomPasswordGeneration()
 {
 	int i = 0;
 	int randomizer = 0;
@@ -20,13 +20,13 @@ void randomPasswordGeneration(int N)
 	char letter[] = "abcdefghijklmnopqrstuvwxyz";
 	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbols[] = "!@#$^&*?";
-	char password[N];
+	char password[5];
 
 	randomizer  = rand() % 4;
 	srand((unsigned int)(time(NULL)));
 
 
-	for (i = 0; i < N; i++)
+	for (i = 0; i < 5; i++)
 	{
 		if (randomizer == 1)
 		{
