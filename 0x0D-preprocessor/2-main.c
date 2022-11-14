@@ -3,13 +3,16 @@
 
 /**
   *main - A program prints name of the file compiled from and a new line.
+  *
+  *Return : Returns 0 on sucessful exit.
   */
 
-void main(void)
+int main(void)
 {
 	char file[] = __FILE__;
+	int count = 0;
 
-	for (int count = 0; count < 80; count++)
+	while (count < 80)
 	{
 		if (file[count] == '\0')
 		{
@@ -17,6 +20,11 @@ void main(void)
 			break;
 		}
 		else
+		{
 			_putchar(file[count]);
+			count++;
+		}
 	}
+
+	return(0);
 }
