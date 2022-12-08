@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list strgs;
 	int i, count;
-	char *holder;
+	char * holder;
 
 	count = n;
 
@@ -22,27 +22,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < count; i++)
 	{
-		holder = va_arg(strgs, char *);
+		holder = va_arg(strgs, char*);
 
-		/*if (holder == NULL)
-		{
-			printf("(nil)");
+		printf("%s", holder);
 
 			if (separator != NULL && i < count - 1)
-			{
-				printf("%s", separator);
-			}
-		}
-
-		else
-		{*/
-			printf("%s", holder);
-
-			if (separator != NULL && i < count - 1)
-			{
-				printf("%s", separator);
-			}
-		/*}*/
+			printf("%s", separator);
 
 	}
 

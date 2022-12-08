@@ -22,9 +22,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < count; i++)
 	{
-		holder = varg(strgs, char*)
+		holder = va_arg(strgs, char*);
 
-		printf("%d", holder);
+		printf("%s", holder);
 
 			if (separator != NULL && i < count - 1)
 			printf("%s", separator);
@@ -33,6 +33,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	printf("\n");
 
-	va_end(nums);
+	va_end(strgs);
 
 }
