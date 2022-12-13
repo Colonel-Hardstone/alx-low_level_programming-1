@@ -11,12 +11,12 @@
 
 int main(int argc, char **argv)
 {
-	int num1, num2, res;
-	char *ope;
-	int (*op)(int, int);
-
 	if (argc == 4)
 	{
+		int num1, num2, res;
+		char *ope;
+		int (*op)(int, int);
+
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[3]);
 		ope = argv[2];
@@ -27,13 +27,16 @@ int main(int argc, char **argv)
 			printf("Error");
 			exit(99);
 		}
+
 		else if ((*(ope) == '%' || *(ope) == '/') && num2 == 0)
 		{
 			printf("Error");
 			exit(100);
 		}
+
 		res = op(num1, num2);
 		printf("%d\n", res);
+		return (0);
 	}
 
 	printf("Error");
