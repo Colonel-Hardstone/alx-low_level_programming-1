@@ -11,34 +11,37 @@
 
 int main(int argc, char **argv)
 {
-	if (argc == 4)
+	int num1, num2, res;
+	char sign;
+	char *op;
+	int (*ope)(int, int);
+
+	if (argc != 4)
 	{
-		int num1, num2, res;
-		char *ope;
-		int (*op)(int, int);
-
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[3]);
-		ope = argv[2];
-		op = get_op_func(argv[2]);
-
-		if (op == NULL)
-		{
-			printf("Error");
-			exit(99);
-		}
-
-		else if ((*(ope) == '%' || *(ope) == '/') && num2 == 0)
-		{
-			printf("Error");
-			exit(100);
-		}
-
-		res = op(num1, num2);
-		printf("%d\n", res);
-		return (0);
+		printf("Error");
+		exit(98);
+	}
+	
+	sign = argv[2][0];
+	
+	if (sign != '+' && sign != '-' && sign != '*' && sign != '/' && sign != '%')
+	{
+		printf("Error");
+		exit(99);
 	}
 
-	printf("Error");
-	exit(98);
-}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+
+	if (num2 == 0 && (sign == '%' || sign == '/'))
+	{
+		printf("Error");
+		exit(100);
+	}
+
+	op = argv[2];
+	ope = get_op_func(op);
+	res = ope(num1, num2);
+	printf("%d\n", res);
+	return (0);
+	}
