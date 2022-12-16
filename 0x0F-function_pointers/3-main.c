@@ -21,10 +21,10 @@ int main(int argc, char **argv)
 		printf("Error");
 		exit(98);
 	}
-	
+
 	sign = argv[2][0];
-	
-	if (sign != '+' && sign != '-' && sign != '*' && sign != '/' && sign != '%')
+
+	if ((sign != '+' && sign != '-' && sign != '*' && sign != '/' && sign != '%') || argv[2][1] != '\0')
 	{
 		printf("Error");
 		exit(99);
